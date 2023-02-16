@@ -1,0 +1,22 @@
+{
+  "name": "memotest",
+  "version": "1.0.0",
+  "description": "Simple juego de memoria",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nullim/memotest.git"
+  },
+  "author": "Nullim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nullim/memotest/issues"
+  },
+  "homepage": "https://github.com/Nullim/memotest#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
