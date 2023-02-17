@@ -5,9 +5,104 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Simon dice</title>
+    <title>Memotest</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <style type="text/css">
-            </style>
+        .col{
+            border: 1px solid black
+        }
+        .oculto{
+            display:none;
+        }
+        .row {
+          height: 300px;
+        }
+        @media (max-width: 768px) {
+            .row {
+                height: 200px;
+            }
+        }
+        @media (max-width: 576px) {
+            .row {
+                height: 100px;
+            }
+        }
+        .card {
+            transition: background-image 0.5s ease-in-out;
+        }
+    </style>
 </head>
 <body>
+    <div class="container py-5 text-center">
+        <h1 class="h3">¡Bienvenido al memotest!</h1>
+        <p class="lead fst-italic">¿Cómo se juega?</p>
+        <p class="lead">Debes unir cada cara atrás de cada cuadrado con su par idéntico. Ganas cuando unes todas las caras con su par.</p>
+        <p class="lead">¿Qué tan rápido puedes hacerlo? Haz clic en el botón <strong>"Nuevo Juego"</strong> para averiguarlo!</p>
+        <button type="button" class="btn btn-primary">Nuevo Juego</button>
+    </div>
+    <div class="text-center">
+        <p class="lead">Tiempo Record: <strong id="tiempo-record" class=""></strong></p>
+        <p class="lead">Tiempo: <strong id="tiempo-ultimo" class=""></strong></p>
+    </div>
+    <div class="container text-center" id="tablero">
+        <div class="row" id="row-1">
+            <div class="card col d-flex justify-content-center align-items-center" id="card-1">
+                ?
+            </div>
+            <div class="card col d-flex justify-content-center align-items-center" id="card-2">
+                ?
+            </div>
+            <div class="card col d-flex justify-content-center align-items-center" id="card-3">
+                ?
+            </div>
+            <div class="card col d-flex justify-content-center align-items-center" id="card-4">
+                ?
+            </div>
+        </div>
+        <div class="row" id="row-2">
+            <div class="card col d-flex justify-content-center align-items-center" id="card-5">
+                ?
+            </div>
+            <div class="card col d-flex justify-content-center align-items-center" id="card-6">
+                ?
+            </div>
+            <div class="card col d-flex justify-content-center align-items-center" id="card-7">
+                ?
+            </div>
+            <div class="card col d-flex justify-content-center align-items-center" id="card-8">
+                ?
+            </div>
+        </div>
+        <div class="row" id="row-3">
+            <div class="card col d-flex justify-content-center align-items-center" id="card-9">
+                ?
+            </div>
+            <div class="card col d-flex justify-content-center align-items-center" id="card-10">
+                ?
+            </div>
+            <div class="card col d-flex justify-content-center align-items-center" id="card-11">
+                ?
+            </div>
+            <div class="card col d-flex justify-content-center align-items-center" id="card-12">
+                ?
+            </div>
+        </div>
+        <div class="row" id="row-4">
+            <div class="card col d-flex justify-content-center align-items-center" id="card-13">
+                ?
+            </div>
+            <div class="card col d-flex justify-content-center align-items-center" id="card-14">
+                ?
+            </div>
+            <div class="card col d-flex justify-content-center align-items-center" id="card-15">
+                ?
+            </div>
+            <div class="card col d-flex justify-content-center align-items-center" id="card-16">
+                ?
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
