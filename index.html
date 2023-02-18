@@ -31,6 +31,15 @@
             width: 100%;
             height: 100%;
         }
+        .incorrecto{
+            border: 2px solid red;
+        }
+        .correcto{
+            border: 2px solid green;
+        }
+        .bloqueado{
+            pointer-events:none;
+        }
     </style>
 </head>
 <body>
@@ -43,11 +52,13 @@
         <button type="button" class="btn btn-secondary" id="reiniciar">Reiniciar</button>
     </div>
     <div class="text-center oculto" id="estadisticas">
-        <p class="lead">Tiempo Record: <strong id="tiempo-record"></strong>segundos</p>
-        <p class="lead">Tiempo: <strong id="tiempo-actual"></strong> segundos</p>
+        <p class="font-weight-bold oculto" id="nuevo-record">¡Has obtenido un nuevo record!</p>
+        <p class="lead">Tiempo Record: <strong id="tiempo-record"></strong> segundos</p>
+        <p class="lead">Tiempo: <strong id="tiempo-actual">0</strong> segundos</p>
         <p class="lead">Cantidad de intentos: <strong id="intentos"></strong></p>
     </div>
     <div class="container text-center" id="tablero">
+        <p class="lead" id="felicitaciones"></p>
         <div class="row" id="row-1">
             <div class="card col d-flex justify-content-center align-items-center" id="card-1">
                 ?
