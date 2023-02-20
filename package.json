@@ -1,10 +1,20 @@
 {
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "cypress": "^12.6.0"
+  },
   "name": "memotest",
-  "version": "1.0.0",
   "description": "Simple juego de memoria",
+  "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "empezar": "http-server",
+    "cypress-run": "cypress run",
+    "cypress-dev": "cypress open",
+    "test": "run-p start cypress-run",
+    "test-dev": "run-p start cypress-dev" 
   },
   "repository": {
     "type": "git",
@@ -15,8 +25,5 @@
   "bugs": {
     "url": "https://github.com/Nullim/memotest/issues"
   },
-  "homepage": "https://github.com/Nullim/memotest#readme",
-  "dependencies": {
-    "bootstrap": "^5.2.3"
-  }
+  "homepage": "https://github.com/Nullim/memotest#readme"
 }
