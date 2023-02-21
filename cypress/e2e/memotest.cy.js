@@ -64,7 +64,16 @@ context('Memotest', () => {
           });
           cy.get('#felicitaciones').should('be.visible');
         });
+
+        it('Se asegura que no muestre estadisticas de jugador al reiniciar', () => {
+          cy.visit(URL);
         
+          cy.get('#nuevo-juego').click();
+
+          cy.get('#reiniciar').click().then(() => {
+            cy.get('#estadisticas').should('have.class', 'oculto');
+          })
+        })
     })
 })
 
